@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "tt/basic-block-template",
+  "version": "0.1.0",
+  "title": "Basic Block Template",
+  "category": "widgets",
+  "description": "A basic block template.",
+  "keywords": [
+    "basic",
+    "block",
+    "template"
+  ],
+  "textdomain": "basic-block-template",
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "default": "Hello world!"
+    }
+  },
+  "example": {
+    "attributes": {
+      "content": "Hello world!"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "className": true,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true,
+        "link": true
+      }
+    },
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
